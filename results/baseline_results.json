@@ -1,0 +1,34 @@
+{
+  "configuration": "baseline",
+  "generation_model": "llama3.2:1b",
+  "retrieval": "flat index, semantic similarity only",
+  "results": [
+    {
+      "query": "window resize not working correctly",
+      "retrieved_titles": [
+        "[Feature Request] Allow resizeTo() (and other resize functionality) to work on windows where \"resizable\" is false",
+        "Rectangle Doesn't Resize Windows",
+        "Dragging windows between screens makes them resize"
+      ],
+      "recommendation": "Based on similar resolved issues, here's a concise resolution recommendation for the new issue:\n\nTo resolve the \"window resize not working correctly\" issue where `win.resizeTo()` or other NW.js API calls fail to resize windows when set as non-resizable (`resizable: false`), I recommend adding an additional check in your code to ensure that the window is not already being resized before attempting to resize it. This can be achieved by checking if the window's current size is different from its initial size, and only then attempt to resize it. Additionally, you may want to consider implementing a \"resize timeout\" mechanism to prevent excessive resizing attempts when the window is already in a fixed position or size."
+    },
+    {
+      "query": "authentication token expiring too quickly",
+      "retrieved_titles": [
+        "Clarify cookie session refresh/invalidation",
+        "Token-refresh failing for performance tests",
+        "getIdToken throws \"auth/user-token-expired\" if refresh token is revoked"
+      ],
+      "recommendation": "Based on the similar resolved issues, I recommend providing clear guidance on how to handle authentication tokens expiring too quickly, specifically addressing the scenarios of cookie session refresh/invalidation and token-refresh failing for performance tests.\n\nHere's a concise resolution recommendation:\n\n\"To resolve the issue of authentication token expiring too quickly, ensure that you are refreshing cookies with a sufficient TTL (time-to-live) and validating them against the expected expiration time. For cookie-based sessions, consider increasing the Cookie expire: 1 minute and Cookie refresh: 15 seconds settings to allow for more flexibility in handling token refreshes. Additionally, verify that your ID Token is being refreshed correctly when the refresh token has expired by checking the Firebase SDK documentation on handling token revocation and expiration.\""
+    },
+    {
+      "query": "dark mode not applying to all components",
+      "retrieved_titles": [
+        "[Blazor] Some of the default UI styling is not accessible in dark mode",
+        "Deployed links sometimes start in dark mode",
+        "[Documentation] v-hover example not good in dark mode"
+      ],
+      "recommendation": "Based on the similar resolved issues, I recommend that we apply the same solution to Issue 1: \"Some of the default UI styling is not accessible in dark mode\". Specifically, we can add the `color-scheme: light only` directive to the template of the server reconnect UI and error boundary UI to ensure that these elements are styled correctly in dark mode. This will prevent accidental styling issues and provide a better user experience for users who prefer dark mode."
+    }
+  ]
+}

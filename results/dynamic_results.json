@@ -1,0 +1,64 @@
+{
+  "configuration": "dynamic_weighted",
+  "generation_model": "llama3.2:1b",
+  "retrieval": "flat index, semantic 0.5 + authority 0.3 + label 0.2",
+  "results": [
+    {
+      "query": "window resize not working correctly",
+      "retrieved_titles": [
+        "Rectangle Doesn't Resize Windows",
+        "Dragging windows between screens makes them resize",
+        "Overlapping of the thirds "
+      ],
+      "top_authors": [
+        "rxhanson",
+        "rxhanson",
+        "rxhanson"
+      ],
+      "authority_scores": [
+        0.3506,
+        0.3506,
+        0.3506
+      ],
+      "recommendation": "Based on the similar resolved issues, I recommend trying the following:\n\nI suggest enabling the \"Show View Logging\" option in System Preferences > Mission Control (or Command + Shift + Left Arrow) to help identify if there's an issue with the rectangle shortcuts or other settings. Additionally, I'll provide a specific solution: try using the \"Command + Shift + Left Arrow\" shortcut without holding Option, as suggested by Reply_1 by rxhanson, and see if it resolves the issue of overlapping windows when resizing them into thirds. If this doesn't work, please let me know and we can further investigate."
+    },
+    {
+      "query": "authentication token expiring too quickly",
+      "retrieved_titles": [
+        "Allow to configure JWT expiration",
+        "Clarify cookie session refresh/invalidation",
+        "Calculate cookie-expire and cookie-refresh from actual OIDC Access-Token and Refresh-Token"
+      ],
+      "top_authors": [
+        "lauriejim",
+        "JoelSpeed",
+        "JoelSpeed"
+      ],
+      "authority_scores": [
+        0.3036,
+        0.1165,
+        0.1165
+      ],
+      "recommendation": "Based on the similar resolved issues, I recommend adding a configuration option to allow users to specify the JWT expiration and refresh period for Strapi's authentication tokens. This can be achieved by creating a new file `jwt.json` in the `config` folder, which will store the user-configured values for JWT expiration and refresh period. The file should have two properties: `expiresIn` and `refreshInterval`, with default values of 30 days and 15 seconds respectively. By allowing users to configure these settings, Strapi can provide a more flexible and customizable authentication experience."
+    },
+    {
+      "query": "dark mode not applying to all components",
+      "retrieved_titles": [
+        "Deployed links sometimes start in dark mode",
+        "(v2) Can't enable light mode by default",
+        "[Blazor] Some of the default UI styling is not accessible in dark mode"
+      ],
+      "top_authors": [
+        "yangshun",
+        "slorber",
+        "javiercn"
+      ],
+      "authority_scores": [
+        0.1748,
+        0.1792,
+        0.0574
+      ],
+      "recommendation": "Based on the similar resolved issues, I recommend implementing a feature flag to toggle dark mode globally for certain components or UI elements, rather than relying solely on match media queries. This approach would allow developers to control when and how dark mode is applied, while still providing a seamless user experience across all components. Additionally, this feature flag could be used to identify specific cases where dark mode may not be working as expected, allowing for targeted troubleshooting and optimization."
+    }
+  ]
+}

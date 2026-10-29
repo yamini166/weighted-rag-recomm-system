@@ -1,0 +1,33 @@
+{
+  "evaluator_model": "llama3.2:1b",
+  "threshold": 6,
+  "trials": 20,
+  "input": "fixed recommendation and context",
+  "scores": [
+    4,
+    2,
+    2,
+    9,
+    2,
+    2,
+    4,
+    2,
+    3,
+    2,
+    2,
+    6,
+    2,
+    9,
+    6,
+    2,
+    9,
+    2,
+    2,
+    9
+  ],
+  "mean": 4.05,
+  "std": 2.837252191822221,
+  "min": 2,
+  "max": 9,
+  "pass_rate": 0.3
+}

@@ -1,0 +1,45 @@
+{
+  "test_set_size": 30,
+  "baseline": {
+    "retrieval_metrics": {
+      "MRR": 0.8667,
+      "Recall@1": 0.8667,
+      "Recall@3": 0.8667,
+      "Recall@5": 0.8667
+    },
+    "set_quality": {
+      "Label Match Rate": 0.5833,
+      "Mean Authority of Retrieved": 0.1575
+    }
+  },
+  "dynamic_weighted": {
+    "retrieval_metrics": {
+      "MRR": 0.655,
+      "Recall@1": 0.5333,
+      "Recall@3": 0.7333,
+      "Recall@5": 0.8333
+    },
+    "set_quality": {
+      "Label Match Rate": 0.6333,
+      "Mean Authority of Retrieved": 0.2782
+    }
+  },
+  "weights_used": {
+    "semantic": 0.5,
+    "author_authority": 0.3,
+    "label_relevance": 0.2
+  },
+  "generation_model": "llama3.2:1b",
+  "partitioned_dynamic": {
+    "retrieval_metrics": {
+      "MRR": 0.5133,
+      "Recall@1": 0.3667,
+      "Recall@3": 0.7,
+      "Recall@5": 0.7667
+    },
+    "set_quality": {
+      "Label Match Rate": 0.5883,
+      "Mean Authority of Retrieved": 0.3675
+    }
+  }
+}

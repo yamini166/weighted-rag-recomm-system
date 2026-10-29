@@ -1,0 +1,32 @@
+{
+  "evaluator_model": "llama3.2:1b",
+  "confidence_threshold": 6,
+  "test_results": [
+    {
+      "query": "window resize not working correctly",
+      "confidence": 2,
+      "status": "SUPPRESSED - low confidence",
+      "recommendation": "Based on the similar resolved issues, here's a concise resolution recommendation for the new issue:\n\nI recommend enabling the `ImGuiWindowFlags_NoResize` flag to disable resizing of child windows, while allowing them to be resized independently using the horizontal and vertical resize handles. This will enable users to control the resizing behavior of their child windows as desired. Additionally, I suggest implementing a \"drag-to-resize\" feature for rectangles, which can be achieved by adding a new shortcut (e.g., Command-Shift+Left Arrow) that allows users to drag the rectangle to adjust its size."
+    },
+    {
+      "query": "authentication token expiring too quickly",
+      "confidence": 2,
+      "status": "SUPPRESSED - low confidence",
+      "recommendation": "Based on the similar resolved issues, I recommend adding a configuration option to set the JWT expiration time for Strapi's admin section. This can be achieved by creating a `jwt.json` file in the `config` folder and setting the `expiresIn` option to a reasonable value (e.g., 30 minutes). This will allow users to configure their own JWT expiration times, which is similar to what was suggested in Issue 1. By doing so, Strapi can provide a more flexible and user-friendly experience for its administrators."
+    },
+    {
+      "query": "dark mode not applying to all components",
+      "confidence": 2,
+      "status": "SUPPRESSED - low confidence",
+      "recommendation": "Based on similar resolved issues, I recommend adding `lineHighlight` to the ansi theme for all components. This will ensure that highlighted lines are visible regardless of the user's background color. To achieve this, we can add a CSS rule to override the default line highlighting behavior and apply it to all components using the `CssBaseline` utility from Material-UI."
+    },
+    {
+      "query": "purple elephant dancing on keyboard",
+      "confidence": 1,
+      "status": "SUPPRESSED - low confidence",
+      "recommendation": "Based on the similar resolved issues, I recommend that you investigate and resolve the \"Purple Elephant Dancing on Keyboard\" issue by ensuring that the HTML element is properly registered and configured to work with your keyboard layout. Specifically, verify that the `<kbd>` element is correctly defined in your HTML code and that it is being recognized as a valid input element by your browser. Additionally, check for any potential conflicts or issues related to recursive components or typos in the code. By addressing these factors, you should be able to resolve this issue and have the purple elephant dancing on keyboard functionality working as expected."
+    }
+  ],
+  "delivered_count": 0,
+  "suppressed_count": 4
+}
